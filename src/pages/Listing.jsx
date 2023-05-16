@@ -48,7 +48,7 @@ const Listing = () => {
     let followingData;
 
     useEffect(() => {
-        const newSocket = io('https://fleadisc.herokuapp.com:5001');
+        const newSocket = io('https://fleadisc.herokuapp.com');
         setSocket(newSocket);
 
         return () => {
