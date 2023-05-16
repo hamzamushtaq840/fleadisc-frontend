@@ -71,7 +71,7 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        const socket = io('http://localhost:5001');
+        const socket = io('https://fleadisc.herokuapp.com:5001');
 
         // Emit 'newUser' event when auth.userId changes
         if (auth.userId) {
