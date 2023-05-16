@@ -47,7 +47,7 @@ const PrivateInfo = () => {
                             <h1 className='text-[0.75em] font-[600]' >Listing in</h1>
                             <div className='flex gap-[5px] mt-[5px]'>
                                 <ReactCountryFlag
-                                    countryCode={userInfoQuery.data.data.country}
+                                    countryCode={userInfoQuery?.data?.data?.country}
                                     svg
                                     style={{
                                         width: '1.8em',
@@ -55,7 +55,7 @@ const PrivateInfo = () => {
                                     }}
                                     title="US"
                                 />
-                                <p className='text-[.75em] font-[500]'>{getCountryInfoByISO(userInfoQuery.data.data.country).countryName}</p>
+                                <p className='text-[.75em] font-[500]'>{getCountryInfoByISO(userInfoQuery?.data?.data.country).countryName}</p>
                             </div>
                         </div>
                         {(userInfoQuery?.data?.data?.deliveryAddress?.city || userInfoQuery?.data?.data?.deliveryAddress?.country || userInfoQuery?.data?.data?.deliveryAddress?.line1 || userInfoQuery?.data?.data?.deliveryAddress?.line2) &&

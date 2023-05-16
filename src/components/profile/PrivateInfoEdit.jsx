@@ -34,23 +34,23 @@ const PrivateInfoEdit = () => {
         }
     });
     const [formData, setFormData] = useState({
-        name: userInfoQuery.data.data.name || "",
-        country: userInfoQuery.data.data.country || "",
-        city: userInfoQuery.data.data.city || "",
-        deliveryAddressLine1: userInfoQuery.data.data.deliveryAddress ? userInfoQuery.data.data.deliveryAddress.line1 || "" : "",
-        deliveryAddressLine2: userInfoQuery.data.data.deliveryAddress ? userInfoQuery.data.data.deliveryAddress.line2 || "" : "",
-        deliveryPostalCode: userInfoQuery.data.data.deliveryAddress ? userInfoQuery.data.data.deliveryAddress.postalCode || "" : "",
-        deliveryCity: userInfoQuery.data.data.deliveryAddress ? userInfoQuery.data.data.deliveryAddress.city || "" : "",
-        deliveryState: userInfoQuery.data.data.deliveryAddress ? userInfoQuery.data.data.deliveryAddress.state || "" : "",
-        deliveryCountry: userInfoQuery.data.data.deliveryAddress ? userInfoQuery.data.data.deliveryAddress.country || "" : "",
-        shippingAddressLine1: userInfoQuery.data.data.shippingAddress ? userInfoQuery.data.data.shippingAddress.line1 || "" : "",
-        shippingAddressLine2: userInfoQuery.data.data.shippingAddress ? userInfoQuery.data.data.shippingAddress.line2 || "" : "",
-        shippingPostalCode: userInfoQuery.data.data.shippingAddress ? userInfoQuery.data.data.shippingAddress.postalCode || "" : "",
-        shippingCity: userInfoQuery.data.data.shippingAddress ? userInfoQuery.data.data.shippingAddress.city || "" : "",
-        shippingState: userInfoQuery.data.data.shippingAddress ? userInfoQuery.data.data.shippingAddress.state || "" : "",
-        shippingCountry: userInfoQuery.data.data.shippingAddress ? userInfoQuery.data.data.shippingAddress.country || "" : "",
-        paymentMethods: userInfoQuery.data.data.paymentMethods || [], // new state property for payment methods
-        shippingCostPaidBy: userInfoQuery.data.data.shippingCostPaidBy || "" // new state property for shipping cost payment
+        name: userInfoQuery?.data?.data?.name || "",
+        country: userInfoQuery?.data?.data?.country || "",
+        city: userInfoQuery?.data?.data?.city || "",
+        deliveryAddressLine1: userInfoQuery?.data?.data?.deliveryAddress ? userInfoQuery?.data?.data?.deliveryAddress.line1 || "" : "",
+        deliveryAddressLine2: userInfoQuery?.data?.data?.deliveryAddress ? userInfoQuery?.data?.data?.deliveryAddress.line2 || "" : "",
+        deliveryPostalCode: userInfoQuery?.data?.data?.deliveryAddress ? userInfoQuery?.data?.data?.deliveryAddress.postalCode || "" : "",
+        deliveryCity: userInfoQuery?.data?.data?.deliveryAddress ? userInfoQuery?.data?.data?.deliveryAddress.city || "" : "",
+        deliveryState: userInfoQuery?.data?.data?.deliveryAddress ? userInfoQuery?.data?.data?.deliveryAddress.state || "" : "",
+        deliveryCountry: userInfoQuery?.data?.data?.deliveryAddress ? userInfoQuery?.data?.data?.deliveryAddress.country || "" : "",
+        shippingAddressLine1: userInfoQuery?.data?.data?.shippingAddress ? userInfoQuery?.data?.data?.shippingAddress.line1 || "" : "",
+        shippingAddressLine2: userInfoQuery?.data?.data?.shippingAddress ? userInfoQuery?.data?.data?.shippingAddress.line2 || "" : "",
+        shippingPostalCode: userInfoQuery?.data?.data?.shippingAddress ? userInfoQuery?.data?.data?.shippingAddress.postalCode || "" : "",
+        shippingCity: userInfoQuery?.data?.data?.shippingAddress ? userInfoQuery?.data?.data?.shippingAddress.city || "" : "",
+        shippingState: userInfoQuery?.data?.data?.shippingAddress ? userInfoQuery?.data?.data?.shippingAddress.state || "" : "",
+        shippingCountry: userInfoQuery?.data?.data?.shippingAddress ? userInfoQuery?.data?.data?.shippingAddress.country || "" : "",
+        paymentMethods: userInfoQuery?.data?.data?.paymentMethods || [], // new state property for payment methods
+        shippingCostPaidBy: userInfoQuery?.data?.data?.shippingCostPaidBy || "" // new state property for shipping cost payment
     });
 
     const handleInputChange = (event) => {
