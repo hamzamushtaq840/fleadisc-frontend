@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #FAFAFA;
+}
+
+.ReactFlagsSelect-module_selectValue__152eS {
+  color: #AAAAAA;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-left: -10px;
+}
+
+.ReactFlagsSelect-module_selectFlag__2q5gC svg {
+  width: 25px;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  border-color: #595959;
+  border-radius: 2px;
+}
+
+select,
+select option {
+  color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #999999;
+}
+
+/*Added for browser compatibility*/
+[hidden] {
+  display: none;
+}
+
+option:first-child {
+  color: #ccc;
+}
+
+/* Define the fill color for the SVG when the NavLink is not active */
+.nav-link svg {
+  fill: #1E1E21B2;
+  ;
+}
+
+/* Define the fill color for the SVG when the NavLink is active */
+.nav-link.active svg {
+  fill: #389668;
+}
+
+.nav-link:hover svg {
+  fill: black;
+}
+
+.nav-link.active:hover svg {
+  fill: #389668;
+}
+
+.nav-link.active h1 {
+  color: #389668;
+  font-weight: 600;
+}
+
+.modalBackground {
+  width: 100%;
+  min-width: calc(100vw - 100%);
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 21;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modalContainer {
+  border-radius: 6px;
+  border: 1px solid #81B29A;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  animation-name: animateModal;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.modalContainer2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+
+@keyframes animateModal {
+  0% {
+    top: -20px;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
+.button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buttonAnimation {
+  position: relative;
+  transition: all;
+  transition-duration: 100ms;
+}
+
+.buttonAnimation:hover {
+  top: 2px;
+}
+
+.buttonAnimation:active {
+  top: 4px;
+}
+
+.listingBackgroundImage {
+  position: relative;
+  background-image: url("./assets/ListingMainImage.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.listingBackgroundImage::before {
+  content: "";
+  /* create an empty element to use as the additional layer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  border: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.ReactFlagsSelect-module_selectValue__152eS {
+  padding: 0 !important;
+}
+
+/* .ReactFlagsSelect-module_secondaryLabel__37t1D */
+
+.ReactFlagsSelect-module_label__27pw9 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 0.75em !important;
+  display: flex;
+  align-items: center;
+  letter-spacing: .5px;
+  padding-top: 2px;
+}
+
+.nav-link2.active {
+  background-color: white;
+  border-radius: 7px;
+  border: 0.1px solid #ccc;
+  box-shadow: 3px 4px 19px -17px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 3px 4px 19px -17px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 3px 4px 19px -17px rgba(0, 0, 0, 0.35);
+}
+
+.nav-link2.active h2 {
+  font-weight: 600;
+  color: black;
+}
+
+#dotted-line {
+  border: none;
+  color: rgb(7, 189, 245);
+  margin: px 60px;
+}
+
+.div {
+  border-left: 3px dotted #C6BCBC;
+  /* height: 30px; */
+}
+
+.card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link3.active h1 {
+  font-weight: 600;
+  color: #000000;
+  font-size: 0.875em;
+}
+
+.css-13cymwt-control {
+  min-height: 10px !important;
+  max-height: 23px !important;
+  min-height: 23px !important;
+  border-color: #595959 !important;
+  border-radius: 2px !important;
+}
+
+.css-t3ipsp-control {
+  min-height: 10px !important;
+  max-height: 23px !important;
+  min-height: 23px !important;
+  border-color: #595959 !important;
+  border-radius: 2px !important;
+}
+
+.css-art2ul-ValueContainer2 {
+  /* background-color: #389668; */
+  margin-top: -6px;
+  padding-left: 4px !important;
+
+}
+
+.css-4xgw5l-IndicatorsContainer2 {
+  margin-top: -7px;
+}
+
+.css-1jqq78o-placeholder {
+  font-weight: 400;
+}
+
+.ReactFlagsSelect-module_fullWidthOptions__1XeR6 {
+  min-width: 200px;
+}
+
+.abc:hover .helpDiv[data-title]:after {
+  text-align: center;
+  min-width: 100px;
+  background-color: #8D959D;
+  color: white !important;
+  font-size: 10px;
+  font-weight: 600;
+  content: attr(data-title);
+  position: absolute;
+  /* left: 100%; */
+  top: 27px;
+  left: -45px;
+  word-wrap: normal;
+  z-index: 10000;
+  border-radius: 2px;
+  padding: 10px 10px;
+}
+
+.css-hlgwow {
+  padding: 2px 5px !important;
+  margin-top: -6px !important;
+}
+
+.css-1wy0on6 {
+  margin-top: -7px !important;
+}
+
+@media screen and (min-width: 767px) {
+
+  .css-13cymwt-control {
+    max-height: 1.938em !important;
+    min-height: 1.938em !important;
+    border-color: #595959 !important;
+    border-radius: 2px !important;
+  }
+
+  .css-t3ipsp-control {
+    max-height: 1.938em !important;
+    min-height: 1.938em !important;
+    border-color: #595959 !important;
+    border-radius: 2px !important;
+  }
+
+  .css-art2ul-ValueContainer2 {
+    margin-top: -5px;
+    padding-left: 4px !important;
+
+  }
+
+  .css-4xgw5l-IndicatorsContainer2 {
+    margin-top: -5px;
+  }
+
+  .css-hlgwow {
+    padding: 2px 5px !important;
+    margin-bottom: 1px !important;
+    margin-top: 0px !important;
+  }
+
+  .css-1wy0on6 {
+    margin-top: -5px !important;
+  }
+
+}
