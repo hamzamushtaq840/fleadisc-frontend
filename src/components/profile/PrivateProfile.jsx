@@ -18,7 +18,6 @@ const PrivateProfile = () => {
         const photo = await handleUpload(file)
         pictureMutation.mutate({ pictureURL: photo, userId: auth.userId })
         setAuth({ ...auth, profilePicture: photo })
-        console.log(auth);
 
     };
 

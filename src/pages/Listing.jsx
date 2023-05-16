@@ -37,7 +37,7 @@ const Listing = () => {
     const { isLoading: isLoadingListings, isRefetching: isRefectingListings, data: listingsData, refetch: listingsRefetch } = useQuery(
         ['listings', { userCurrency }],
         async () => {
-            const response = await axios.get(`/disc?userCurrency=${userCurrency}`);
+            const response = await axios.get(`/disc/allUsersDiscs`);
             setData(response.data)
             applyFilters(appliedFilters)
             return response.data;
@@ -48,7 +48,7 @@ const Listing = () => {
     let followingData;
 
     useEffect(() => {
-        const newSocket = io('https://fleadisc.herokuapp.com:5001');
+        const newSocket = io('https://fleadisc.herokuapp.com');
         setSocket(newSocket);
 
         return () => {
