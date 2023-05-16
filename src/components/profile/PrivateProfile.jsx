@@ -99,7 +99,7 @@ const PrivateProfile = () => {
     else
         return (
             <div style={{ minHeight: "calc(100vh - 67px)", scrollBehavior: "smooth" }} className='mx-[2.575em] flex flex-col sm:mx-[1rem] xsm:mx-[0rem] xsm:pt-[20px] sm:pt-[20px] pt-[40px] text-[1.2rem] sm:text-[1rem] xsm:text-[1rem]'>
-                <div className='flex justify-center'><img src={userInfoQuery.data.data.profilePicture !== null ? userInfoQuery.data.data.profilePicture : user} className="xsm:h-[8em] sm:h-[8em] md:h-[8em] lg:h-[8em] xl:h-[8em] 2xl:h-[8em] xsm:w-[8em] sm:w-[8em] md:w-[8em] lg:w-[8em] xl:w-[8em] 2xl:w-[8em] rounded-full" alt="user" /></div>
+                <div className='flex justify-center'><img src={userInfoQuery?.data?.data?.profilePicture !== null ? userInfoQuery?.data?.data?.profilePicture : user} className="xsm:h-[8em] sm:h-[8em] md:h-[8em] lg:h-[8em] xl:h-[8em] 2xl:h-[8em] xsm:w-[8em] sm:w-[8em] md:w-[8em] lg:w-[8em] xl:w-[8em] 2xl:w-[8em] rounded-full" alt="user" /></div>
                 <label htmlFor='fileInput' className='text-center text-[.65em] mt-[3px]'>
                     <span className='cursor-pointer hover:underline'>Change picture</span>
                     <input
