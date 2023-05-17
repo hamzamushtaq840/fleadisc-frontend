@@ -193,10 +193,8 @@ const Create = () => {
         setAdded(false)
         if (multipleDiscs.length === 0) {
             setMultipleDiscs([...multipleDiscs, inputValues])
-            console.log('i ran 4');
         }
         if (multipleDiscs.length > 0 && added === false) {
-            console.log('i ran 5');
             setMultipleDiscs([...multipleDiscs, inputValues])
         }
         setInputValues({

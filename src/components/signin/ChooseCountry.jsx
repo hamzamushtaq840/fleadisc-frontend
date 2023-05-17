@@ -43,7 +43,6 @@ const ChooseCountry = () => {
             }
             mutate(formData, {
                 onSuccess: (res) => {
-                    console.log(res);
                     toast.success('Account Created');
                     navigate('/signin');
                 },

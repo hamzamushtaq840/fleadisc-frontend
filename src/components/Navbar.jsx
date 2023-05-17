@@ -104,7 +104,6 @@ const Navbar = () => {
                 }
             })
             socket.on('refetchMessageRead', () => {
-                console.log('i hhhhhhhhhhhh');
                 queryClient.invalidateQueries('userMessagess')
             })
         }

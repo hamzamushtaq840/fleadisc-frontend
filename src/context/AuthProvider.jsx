@@ -4,14 +4,14 @@ const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
     const [auth, setAuth] = useState(() => {
-        const storedAuth = localStorage.getItem("auth");
+        const storedAuth = localStorage.getItem("auth1");
         return storedAuth ? JSON.parse(storedAuth) : {};
     });
 
     const [socket, setSocket] = useState(""); // State to store socket.id
 
     useEffect(() => {
-        localStorage.setItem("auth", JSON.stringify(auth));
+        localStorage.setItem("auth1", JSON.stringify(auth));
     }, [auth]);
 
     useEffect(() => {

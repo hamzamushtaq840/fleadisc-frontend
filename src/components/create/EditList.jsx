@@ -210,7 +210,6 @@ const Edit = () => {
                 endTime: ''
             }))
         }
-        // console.log(inputValues);
         editDisc.mutate()
     }
 

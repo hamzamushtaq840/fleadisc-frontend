@@ -45,7 +45,6 @@ const Signin = () => {
                 onSuccess: (res) => {
                     if (!res.data.profilePicture)
                         res.data.profilePicture = null
-                    console.log(res.data);
                     setAuth(res.data)
                     navigate('/')
                 },
