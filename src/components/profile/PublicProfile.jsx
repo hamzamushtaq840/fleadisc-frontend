@@ -1,9 +1,8 @@
 import React from 'react'
 import { NavLink, Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
-import user from './../../assets/user.svg'
+import user from './../../assets/signin.svg'
 import axios from '../../api/axios'
 import { useQuery } from '@tanstack/react-query'
-import useAuth from '../../hooks/useAuth'
 
 const PublicProfile = () => {
     const location = useLocation()

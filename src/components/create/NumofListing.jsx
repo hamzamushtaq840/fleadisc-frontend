@@ -81,7 +81,7 @@ const NumofListing = ({ setModel, discs, clearForm }) => {
                     }
                 }
                 try {
-                    const { data } = await axios.post('/disc/post', disc);
+                    const { data } = await axios.post('/disc/postDisc', disc);
                     return data;
                 } catch (error) {
                     console.log(error);
