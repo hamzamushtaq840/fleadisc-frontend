@@ -56,8 +56,8 @@ const SingleBuyDisc = ({ value, temp }) => {
     return (
         <>
             <div className='flex flex-col items-center gap-[10px]'>
-                <div className={`flex flex-col card  mb-[10px] pb-[8px] card rounded-[8px] bg-[#ffffff] xsm:text-[1.07rem] sm:text-[1.07rem] text-[1.2rem] flex-wrap xsm:min-w-[165px] xsm:max-w-[165px] sm:min-w-[165px] sm:max-w-[165px] md:min-w-[200px] md:max-w-[200px] lg:min-w-[210px] lg:max-w-[210px] xl:min-w-[220px] xl:max-w-[220px] 2xl:min-w-[240px] 2xl:max-w-[240px]`} >
-                    <img src={value.discId.pictureURL} className=' hover:opacity-[0.8] xsm:h-[165px] rounded-t-[8px] sm:h-[165px] md:h-[200px] lg:h-[210px] xsm:min-w-[165px] xsm:max-w-[165px] sm:min-w-[165px] sm:max-w-[165px] md:min-w-[200px] md:max-w-[200px] lg:min-w-[210px] lg:max-w-[210px] xl:min-w-[220px] xl:h-[220px] xl:max-w-[220px] 2xl:min-w-[240px] 2xl:max-w-[240px] 2xl:h-[240px] cursor-pointer' alt="" />
+                <div className={`flex flex-col card  mb-[10px] pb-[8px] card rounded-[8px] bg-[#ffffff] xsm:text-[1.07rem] sm:text-[1.07rem] text-[1.2rem] flex-wrap xsm:min-w-[170px] xsm:max-w-[170px] sm:min-w-[170px] sm:max-w-[170px] md:min-w-[200px] md:max-w-[200px] lg:min-w-[210px] lg:max-w-[210px] xl:min-w-[220px] xl:max-w-[220px] 2xl:min-w-[240px] 2xl:max-w-[240px]`} >
+                    <img src={value.discId.pictureURL} className=' hover:opacity-[0.8] xsm:h-[170px] rounded-t-[8px] sm:h-[170px] md:h-[200px] lg:h-[210px] xsm:min-w-[170px] xsm:max-w-[170px] sm:min-w-[170px] sm:max-w-[170px] md:min-w-[200px] md:max-w-[200px] lg:min-w-[210px] lg:max-w-[210px] xl:min-w-[220px] xl:h-[220px] xl:max-w-[220px] 2xl:min-w-[240px] 2xl:max-w-[240px] 2xl:h-[240px] cursor-pointer' alt="" />
                     <div className='flex flex-col  justify-between px-[0.625em] pt-[0.425em]'>
                         <div className='flex  justify-between'>
                             <div className='flex flex-col'>
