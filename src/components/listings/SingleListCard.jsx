@@ -191,7 +191,7 @@ const SingleListCard = ({ val, seller }) => {
                     <div className='flex flex-col items-start'>
                         <div className='flex  relative justify-start '>
                             <h1 className='text-[0.75em] font-[700]' >{val.discName}</h1>
-                            <span className='px-[0.5em] mt-[2px] absolute right-[-25px] top-[-1px]  ml-[-5px] text-[0.563em] border-[1px] rounded-full border-[#595959]'>{val.condition}</span>
+                            <span className='px-[0.5em] mt-[2px] absolute right-[-19px] top-[-1px]  ml-[-5px] text-[0.563em] border-[1px] rounded-full border-[#595959]'>{val.condition}</span>
                         </div>
                         <h1 className='text-[0.55em] font-[500] min-h-[20.81px] inline leading-[11px] text-[##595959]'>{val.brand}</h1>
                     </div>
